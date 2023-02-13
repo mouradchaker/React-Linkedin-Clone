@@ -3,10 +3,17 @@ import React from "react";
 import "./Sidebar.css";
 
 function Sidebar() {
+  const pstyle = {
+    fontWeight: "bold",
+    color: "#0a66c2",
+  };
   return (
     <div className="sidebar">
       <div className="sidebar__top">
-        <img src="" alt="" />
+        <img
+          src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          alt=""
+        />
         <Avatar className="sidebar__avatar" />
         <h2>Mourad Chaker</h2>
         <h4>mouradchaker61@gmail.com</h4>
@@ -15,12 +22,16 @@ function Sidebar() {
       <div className="sidebar__stats">
         <div className="sidebar__stat">
           <p>Who viewed you</p>
-          <p className="sidebar__statNumber">3,543</p>
+          <p className="sidebar__statNumber" style={pstyle}>
+            3,543
+          </p>
         </div>
 
         <div className="sidebar__stat">
           <p>Views on post</p>
-          <p className="sidebar__statNumber">2,193</p>
+          <p className="sidebar__statNumber" style={pstyle}>
+            2,193
+          </p>
         </div>
       </div>
 
