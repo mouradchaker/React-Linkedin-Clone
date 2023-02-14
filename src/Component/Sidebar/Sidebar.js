@@ -3,6 +3,15 @@ import React from "react";
 import "./Sidebar.css";
 
 function Sidebar() {
+  const recentItem = (topic) => {
+    return (
+      <div className="sidebar__recentItem">
+        <span className="sidebar__hash">#</span>
+        <p>{topic}</p>
+      </div>
+    );
+  };
+
   const pstyle = {
     fontWeight: "bold",
     color: "#0a66c2",
@@ -37,6 +46,11 @@ function Sidebar() {
 
       <div className="sidebar__bottom">
         <p>Recent</p>
+        {recentItem("reactjs")}
+        {recentItem("programing")}
+        {recentItem("softwareengineering")}
+        {recentItem("design")}
+        {recentItem("developer")}
       </div>
     </div>
   );
