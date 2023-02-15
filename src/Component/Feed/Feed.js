@@ -6,6 +6,7 @@ import SubscriptionsIcon from "@mui/icons-material/Subscriptions";
 import EventNoteIcon from "@mui/icons-material/EventNote";
 import CalendarViewDayIcon from "@mui/icons-material/CalendarViewDay";
 import InputOption from "../InputOption/InputOption";
+import Post from "../Psts/Post";
 function Feed() {
   return (
     <div className="feed">
@@ -29,6 +30,13 @@ function Feed() {
           />
         </div>
       </div>
+
+      {/*  Posts  */}
+      <Post
+        name="Mourad Chaker"
+        description="This is a test"
+        message="WOW this workes"
+      />
     </div>
   );
 }
