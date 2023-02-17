@@ -77,6 +77,7 @@
 
 .sidebar__recentItem {
   display: flex;
+  align-items: first baseline;
   font-size: 13px;
   color: gray;
   font-weight: bolder;
