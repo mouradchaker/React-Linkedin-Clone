@@ -59,6 +59,7 @@
   color: gray;
   font-size: 13px;
   font-weight: 600;
+  margin-top: 5px;
 }
 
 .sidebar__bottom {
@@ -73,6 +74,7 @@
 .sidebar__bottom > p {
   font-size: 13px;
   padding-bottom: 10px;
+  margin-top: 5px;
 }
 
 .sidebar__recentItem {
@@ -82,7 +84,7 @@
   color: gray;
   font-weight: bolder;
   cursor: pointer;
-  padding: 5px;
+  padding: 1px;
 }
 
 .sidebar__recentItem:hover {
