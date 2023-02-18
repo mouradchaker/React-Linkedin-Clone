@@ -98,3 +98,9 @@
   margin-right: 10px;
   margin-left: 5px;
 }
+
+@media (max-width: 620px) {
+  .sidebar {
+    display: none;
+  }
+}

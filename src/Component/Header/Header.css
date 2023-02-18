@@ -40,3 +40,37 @@
 .header__right {
   display: flex;
 }
+.close__btn {
+  background-color: transparent;
+  border: none;
+  color: #0177b7;
+  opacity: 0;
+}
+button .close__icon {
+  font-size: 40px;
+}
+
+.header__navbar {
+  display: block;
+}
+@media (max-width: 860px) {
+  .header {
+    display: block;
+  }
+  .header__right {
+    display: none;
+  }
+  .close__btn {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 380px) {
+  .header__left > img {
+    display: none;
+  }
+}

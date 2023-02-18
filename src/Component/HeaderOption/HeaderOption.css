@@ -21,3 +21,17 @@
   width: 25px !important;
   height: 25px !important;
 }
+
+@media (max-width: 860px) {
+  .headerOption {
+    align-items: start;
+    margin-left: 20px;
+  }
+
+  .headerOption__title {
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+  }
+}

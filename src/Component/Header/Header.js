@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 import HomeIcon from "@mui/icons-material/Home";
@@ -8,12 +8,14 @@ import ChatIcon from "@mui/icons-material/Chat";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import LogoutIcon from "@mui/icons-material/Logout";
 import HeaderOption from "../HeaderOption/HeaderOption";
-import img from "./profil.jpg";
+
 import { useDispatch } from "react-redux";
 import { logout } from "../../features/userSlice";
 import { auth } from "../../firebase";
+import ViewWeekIcon from "@mui/icons-material/ViewWeek";
 
 function Header() {
+  const [showLinks, setShowLinks] = useState(false);
   const dispatch = useDispatch();
 
   const logoutOfApp = () => {
@@ -34,8 +36,10 @@ function Header() {
           <input placeholder="Search" type="text" />
         </div>
       </div>
-
-      <div className="header__right">
+      <button className="close__btn" onClick={() => setShowLinks(!showLinks)}>
+        <ViewWeekIcon className="close__icon" />
+      </button>
+      <div className={`${showLinks ? " header__navbar " : "header__right"}`}>
         <HeaderOption Icon={HomeIcon} title="Home" />
         <HeaderOption Icon={SupervisorAccountIcon} title="My Network" />
         <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
